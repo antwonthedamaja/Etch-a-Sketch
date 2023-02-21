@@ -28,19 +28,15 @@ function createDivs() {
         container.appendChild(moreDivs);
     } 
     const etch = container.querySelectorAll('div');
+    let hue = 0;
     etch.forEach(div => {
         div.addEventListener("mouseover", () => {
             if (colorMode === "color") {
                 div.style.backgroundColor = picker.value;
             } else if (colorMode === "rainbow") {
-                div.style.backgroundColor = rainbow();
+                hue += 10;
+                div.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
             }
         });
     });
-}
-
-function rainbow() {
-    let hue = Math.random()*360;
-    let color = `hsl(${hue}, 100%, 50%)`;
-    return color;
 }
