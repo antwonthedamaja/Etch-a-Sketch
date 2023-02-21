@@ -5,10 +5,6 @@
     flex-direction: column;
 }
 
-#reset {
-    margin-top: 2.5rem;
-}
-
 .content {
     display: flex;
     justify-content: center;
@@ -44,4 +40,13 @@
 
 #color {
     margin-top: .25rem;
+}
+
+.hero > label {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+#reset {
+    margin-top: .5rem;
 }
