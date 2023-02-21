@@ -30,7 +30,7 @@ function createDivs() {
     const etch = container.querySelectorAll('div');
     let hue = 0;
     etch.forEach(div => {
-        div.addEventListener("mouseover", () => {
+        div.addEventListener("mouseover click", () => {
             if (colorMode === "color") {
                 div.style.backgroundColor = picker.value;
             } else if (colorMode === "rainbow") {
